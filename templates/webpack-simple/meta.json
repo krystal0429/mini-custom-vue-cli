@@ -1,0 +1,44 @@
+{
+  "prompts": {
+    "name": {
+      "type": "input",
+      "required": true,
+      "label": "项目名称"
+    },
+    "description": {
+      "type": "input",
+      "required": true,
+      "label": "项目描述",
+      "default": "A Vue.js project"
+    },
+    "author": {
+      "type": "input",
+      "label": "作者"
+    },
+    "license": {
+      "type": "input",
+      "label": "执照",
+      "default": "MIT"
+    },
+    "sass": {
+      "type": "confirm",
+      "message": "使用sass吗？",
+      "default": false
+    },
+    "vux": {
+      "type": "confirm",
+      "message": "使用vuex数据存储吗？",
+      "default": false
+    },
+    "vueRouter": {
+      "type": "confirm",
+      "message": "使用vue-router吗？",
+      "default": true
+    }
+  },
+  "filters": {
+    "src/router/*": "vueRouter",
+    "src/store/*": "vux"
+  },
+  "completeMessage": "{{#inPlace}}To get started:\n\n  npm install\n  npm run dev{{else}}To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run dev{{/inPlace}}"
+}

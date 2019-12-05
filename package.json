@@ -1,0 +1,34 @@
+{
+  "name": "mini-custom-vue-cli",
+  "version": "1.0.0",
+  "description": "一个自定义的vue-cli",
+  "main": "index.js",
+  "bin": {
+    "mc": "./bin/mc.js",
+    "mc init": "./bin/mc-init.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JP",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "commander": "^4.0.1",
+    "inquirer": "^7.0.0",
+    "semver": "^6.3.0",
+    "async": "^3.1.0",
+    "consolidate": "^0.15.1",
+    "handlebars": "^4.5.3",
+    "logger": "0.0.1",
+    "metalsmith": "^2.3.0",
+    "minimatch": "^3.0.4",
+    "multimatch": "^4.0.0",
+    "ora": "^4.0.3",
+    "read-metadata": "^1.0.0"
+  },
+  "engines": {
+    "node": ">= 10.0.0",
+    "npm": ">= 6.0.0"
+  }
+}
